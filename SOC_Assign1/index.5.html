@@ -1,0 +1,23 @@
+<html>
+<head><title>1.1.5</title>
+  <script>
+  function Function(){
+    var height,width;
+    height=document.getElementById("i1").value;
+    width=document.getElementById("i2").value;
+    document.getElementById("iframe1").height=height;
+    document.getElementById("iframe1").width=width;
+  }
+  </script>
+</head>
+<body>
+  <center>
+    <h1>My First sub-window</h1><br><br>
+    height (in px)<input type = 'text' id = 'i1'>&nbsp
+    width (in px)<input type = 'text' id = 'i2'><br>
+    <input type = 'button' value="GO!" onclick="Function();"><br>
+    <h5>NOTE: By Default height*width = 300*400</h5><br>
+    <iframe height="300" width="400" id = "iframe1" src = "https://www.wikipedia.org/"></iframe>
+  </center>
+</body>
+</html>
